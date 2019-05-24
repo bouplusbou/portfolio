@@ -1,21 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+import ReactLogo from "../components/react-logo"
+import NodeLogo from "../components/node-logo"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+export default () => (
+  <div style={{ color: `black` }}>    
+    <h1>Hi <span>👋</span>,</h1>
+    <p>I'm Baptiste Boucher a french CS student <a href="https://twitter.com/42born2code">@42</a> </p>
+    <p>Current focus:</p>
+    <div style={{ maxWidth: `100px`}}>
+      <ReactLogo />
+      <NodeLogo />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <a style={{color: `black`, textDecoration: `none`}} href="https://github.com/bouplusbou">github</a> <br/>
+    <a style={{color: `black`, textDecoration: `none`}} href="https://github.com/bouplusbou">linkedin</a> <br/>
+    <a style={{color: `black`, textDecoration: `none`}} href="https://github.com/bouplusbou">email</a> <br/>
+  </div>
 )
-
-export default IndexPage
